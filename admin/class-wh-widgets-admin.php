@@ -99,5 +99,31 @@ class Wh_Widgets_Admin {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wh-widgets-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
+	
+	/**
+	 * Add an options page under the Settings submenu
+	 *
+	 * @since  1.0.0
+	 */
+	public function add_options_page() {
+	}
+	
+	
+	/**
+	 * Render the options page for plugin
+	 *
+	 * @since  1.0.0
+	 */
+	public function display_options_page() {
+	    include_once 'partials/wh-widgets-admin-display.php';
+	}
+	
+	/**
+	 * Register all related settings of this plugin
+	 *
+	 * @since  1.0.0
+	 */
+	public function register_setting() {
+	}
 
 }

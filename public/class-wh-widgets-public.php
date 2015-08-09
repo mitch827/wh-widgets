@@ -100,4 +100,27 @@ class Wh_Widgets_Public {
 
 	}
 
+	/**
+	 * Register all of the wh custom widgets on startup.
+	 *
+	 * Calls 'widgets_init' action after all of the WordPress widgets have been
+	 * registered.
+	 *
+	 * @since 2.2.0
+	 */
+	public function wh_widgets_init() {
+		if ( !is_blog_installed() )
+			return;
+		
+		register_widget('WH_Footer_text_Widget');
+		register_widget('WH_Footer_Sidenav_Menu_Widget');
+		register_widget('WH_Lead_gen_Widget');
+		register_widget('WH_Google_map_Widget');
+	}	
 }
+
+//load widgets classes
+require_once 'partials/widgets/wh-footer-text-widget.php';
+require_once 'partials/widgets/wh-subnav-widget.php';
+require_once 'partials/widgets/wh-lead-gen-widget.php';
+require_once 'partials/widgets/wh-google-map-widget.php';
