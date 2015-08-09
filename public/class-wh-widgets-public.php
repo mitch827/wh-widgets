@@ -30,7 +30,8 @@ class Wh_Widgets_Public {
 	 * @var      string    $plugin_name    The ID of this plugin.
 	 */
 	private $plugin_name;
-
+	
+	private $option_name = 'wh_widgets';
 	/**
 	 * The version of this plugin.
 	 *
@@ -109,13 +110,26 @@ class Wh_Widgets_Public {
 	 * @since 2.2.0
 	 */
 	public function wh_widgets_init() {
+		$whFooter = (bool) get_option( $this->option_name . '_wh_footer_text' );
+		$whLeadgen = (bool) get_option( $this->option_name . '_wh_lead_gen' );
+		$whSidenav = (bool) get_option( $this->option_name . '_wh_sidenav' );
+		$whGmap = (bool) get_option( $this->option_name . '_wh_gmap' );
+		
 		if ( !is_blog_installed() )
 			return;
 		
-		register_widget('WH_Footer_text_Widget');
-		register_widget('WH_Footer_Sidenav_Menu_Widget');
-		register_widget('WH_Lead_gen_Widget');
-		register_widget('WH_Google_map_Widget');
+		if ( $whFooter ){
+			register_widget('WH_Footer_text_Widget');
+		}
+		if ( $whLeadgen ){
+			register_widget('WH_Footer_Sidenav_Menu_Widget');
+		}
+		if ( $whSidenav ){
+			register_widget('WH_Lead_gen_Widget');
+		}
+		if ( $whGmap ){
+			register_widget('WH_Google_map_Widget');
+		}
 	}	
 }
 
