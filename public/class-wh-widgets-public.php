@@ -31,6 +31,13 @@ class Wh_Widgets_Public {
 	 */
 	private $plugin_name;
 	
+	 /**
+	 * The options name to be used in this plugin
+	 *
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     string      $option_name    Option name of this plugin
+	 */
 	private $option_name = 'wh_widgets';
 	/**
 	 * The version of this plugin.
