@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              http://www.webheores.it
- * @since             1.0.0
+ * @since             1.0.1a
  * @package           Wh_Widgets
  *
  * @wordpress-plugin

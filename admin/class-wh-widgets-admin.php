@@ -116,12 +116,13 @@ class Wh_Widgets_Admin {
 	 */
 	public function add_options_page() {
 		
-		 $this->plugin_screen_hook_suffix =  add_plugins_page(
-	        __( 'Web Heroes widgets collection', 'wh-widgets' ),
-	        __( 'WH Widgets', 'wh-widgets' ),
-	        'manage_options',
-	        $this->plugin_name,
-	        array( $this, 'display_options_page' )
+	    $this->plugin_screen_hook_suffix = add_submenu_page(
+		    'web-heroes', 
+		    __( 'Web Heroes widgets collection', 'wh-widgets' ), 
+		    __( 'WH Widgets', 'wh-widgets' ),
+		    'manage_options', 
+		    $this->plugin_name, 
+		    array( $this, 'display_options_page' ) 
 	    );
 	}
 	
