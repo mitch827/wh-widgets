@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              http://www.webheores.it
- * @since             1.0.1a
+ * @since             1.0.0
  * @package           Wh_Widgets
  *
  * @wordpress-plugin
  * Plugin Name:       WH Widgtes Plugin
  * Plugin URI:        https://github.com/mitch827/wh-widgets
  * Description:       This is the Web Heroes widgets collection plugin. Some widgets will be installaed for expand theme functionality. Superpowered by <strong>Web Heroes</strong>.
- * Version:           1.0.2a
+ * Version:           1.0.3a
  * Author:            Web Heroes
  * Author URI:        http://www.webheores.it
  * License:           GPL-2.0+
@@ -38,7 +38,8 @@ if ( ! defined( 'WPINC' ) ) {
  */
 function activate_wh_widgets() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wh-widgets-activator.php';
-	Wh_Widgets_Activator::activate();
+	$plugin_base = plugin_basename( __FILE__ );
+	Wh_Widgets_Activator::activate( $plugin_base );
 }
 
 /**
