@@ -16,14 +16,14 @@
  * Plugin Name:       WH Widgtes Plugin
  * Plugin URI:        https://github.com/mitch827/wh-widgets
  * Description:       This is the Web Heroes widgets collection plugin. Some widgets will be installaed for expand theme functionality. Superpowered by <strong>Web Heroes</strong>.
- * Version:           1.0.3a
+ * Version:           1.0.4a
  * Author:            Web Heroes
  * Author URI:        http://www.webheores.it
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wh-widgets
  * Domain Path:       /languages
- * GitHub Plugin URI: https://github.com/mitch827/wh-widgtes
+ * GitHub Plugin URI: https://github.com/mitch827/wh-widgets
  * GitHub Branch:     master
  */
 

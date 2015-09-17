@@ -63,7 +63,7 @@ class WH_Footer_text_Widget extends WP_Widget {
 		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 		
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Sub-title:'); ?></label>
+		<p><label for="<?php echo $this->get_field_id('sub_title'); ?>"><?php _e('Sub-title:'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('sub_title'); ?>" name="<?php echo $this->get_field_name('sub_title'); ?>" type="text" value="<?php echo esc_attr($subtitle); ?>" /></p>
 
 		<p><label for="<?php echo $this->get_field_id( 'text' ); ?>"><?php _e( 'Content:' ); ?></label>

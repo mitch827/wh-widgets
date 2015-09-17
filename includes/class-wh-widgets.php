@@ -69,7 +69,7 @@ class Wh_Widgets {
 	public function __construct() {
 
 		$this->plugin_name = 'wh-widgets';
-		$this->version = '1.0.3a';
+		$this->version = '1.0.4a';
 
 		$this->load_dependencies();
 		$this->set_locale();
